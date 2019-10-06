@@ -1,34 +1,53 @@
 <html>
+
   <head>
-  <style>
-  body{
-  background-image: url("puschel.png");
-  background-size:cover
-}
-  </style>
+    <style>
+      body {
+        background-image: url("puschel.png");
+        background-size: 100% auto;
+        background-position: center top;
+        background-attachment: fixed;
+      }
+
+    </style>
+    <script>
+      function zeigedich() {
+        var elementKake = document.getElementById("kake");
+        if (elementKake.style.visibility == "hidden") {
+          elementKake.style.visibility = "visible"
+        } else {
+          elementKake.style.visibility = "hidden"
+        }
+
+      }
+
+    </script>
   </head>
+
   <body>
     <h1 align="center">Kuschel und Puschel
     </h1>
-<br/>
+    <br />
 
-<h3 align="center">
-Hier kann man puscheln und kuscheln.
-</h3>  
-
-Kopiert den Link in Google <br> https://i.otto.de/i/otto/19096092/heunec-plueschtier-teddybaer-braun-100-cm.jpg?$formatz$
-<h2 align="center">Hier geht es zu <a target="_blank" href="https://www.google.de">Google</a></h2>
-<br>
-<br>
-<br>
-<br>
+    <h3 align="center">
+      Hier kann man puscheln und kuscheln.
+    </h3>
+    <p align="center">
 
 
-
-     
-
-
-
+      Kopiert den Link in Google <br> https://i.otto.de/i/otto/19096092/heunec-plueschtier-teddybaer-braun-100-cm.jpg?$formatz$</p>
+    <h2 align="center">Hier geht es zu <a target="_blank" href="https://www.google.de">Google</a></h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="cursor:pointer" onclick="zeigedich()">
+      was ist <br> kuschelig
+    </h1>
+    <h1 id="kake" align="center" style="visibility:hidden">Sehr viele Dinge können kuschelig sein<br>
+      zum beispiel ein Kuscheltier.Manchmal sind auch Menschen oder Tiere<br>
+      kuschelig.
+    </h1>
   </body>
 
 </html>
